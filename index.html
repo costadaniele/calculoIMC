@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap" rel="stylesheet">
+        <title>
+            Calcule IMC
+        </title>
+    </head>
+
+    <body>
+        <div id="container">
+
+            <form action="/" class="form" method="POST">
+                <h2>
+                    Calcule seu IMC
+                </h2>
+                <div id="calculo">
+                    <div class="peso">
+                        <label for="peso">
+                            Peso:
+                        </label>
+                        <input type="text" id="peso" name="peso">
+                    </div>
+                    <div class="altura">
+                        <label for="altura">
+                            Altura:
+                        </label>
+                        <input type="text" id="altura" name="altura">
+                    </div>
+                </div>
+                <button type="submit">
+                    Cálculo
+                </button>
+
+                    <div class="resultado"></div>
+            </form>
+
+            <div class="tabela">
+                <h2>
+                    Tabela IMC
+                </h2>
+                <div class="lados">
+                    <div class="lado-esquerdo">
+                        <h3>
+                            IMC
+                        </h3>
+                        <p>Menos do que 18,5</p>
+                        <p>Entre 18,5 e 24,9</p>
+                        <p>Entre 25 e 29,9</p>
+                        <p>Entre 30 e 34,9</p>
+                        <p>Entre 35 e 39,9</p>
+                        <p>Mais do que 40</p>
+                    </div>
+                    <div class="lado-direito">
+                        <h3>
+                            Resultado
+                        </h3>
+                        <p>Abaixo do peso</p>
+                        <p>Peso normal</p>
+                        <p>Sobrepeso</p>
+                        <p>Obesidade grau 1</p>
+                        <p>Obesidade grau 2</p>
+                        <p>Obesidade grau 3</p>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+       
+        <script src="scripts/index.js"></script>
+    </body>
+</html>

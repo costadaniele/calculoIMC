@@ -1,0 +1,155 @@
+:root {
+    --primary-color: #ff9f1c;
+    --bg-color: #22223b;
+    --text-color: #f2e9e4;
+    --light-color: rgba(255, 255, 255, 0.04);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+body {
+   height: 100vh;
+   display: flex;
+   background-color: var(--bg-color);
+   color: var(--text-color);
+}
+
+
+#container {
+    width: 90%;
+    max-width: 980px;
+    margin: 50px auto;  
+    padding: 30px; 
+    display: flex;
+}
+
+
+form {
+    background: var(--light-color);
+    width: 100%;
+    max-width: 400px;
+    margin: 12px auto;
+    padding: 32px 64px;
+}
+
+.tabela h3 {
+    color: #ff9f1c;
+}
+
+#calculo  {
+    display: block;
+}
+
+
+
+h2 {
+    margin-bottom: 32px;
+}
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.tabela p {
+    padding: 5px 0;
+    margin: 5px 0;
+
+}
+input,
+button {
+    /* reset appereance */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    /* box */
+    width: 100%;
+    padding: 16px 0;
+    border:none;
+    border-bottom: 1px solid var(--primary-color);
+    background-color: transparent;
+    outline: none;
+
+    /* text */
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+button {
+    margin-top: 16px;
+    background-color: var(--primary-color);
+}
+
+/* irmão */
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    transition: .4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    color: var(--bg-color);
+}
+
+input span.error {
+    display: flex;
+    padding: 0;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+input span.error.active {
+    border: 1px solid red;
+    padding: 0.4em;
+}
+
+input label #altura {
+    background: var(--bg-color);
+}
+
+
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+
+.lados {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.tabela {
+    width: 100%;
+    max-width: 580px;
+    margin: 32px auto;
+    padding: 32px 64px;
+}
+
+
+.paragrafo-resultado, .erro {
+    background: #197278;
+    padding: 20px;
+    margin: 32px auto;
+}
+
+.erro {
+    background: rgba(255, 0, 0, 0.5);
+}
